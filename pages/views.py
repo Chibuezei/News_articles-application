@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render #from package.module import Class
 from django.http import HttpResponse
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView #from package.package.module import Class
 
 # Create your views here.
 class HomePageView(TemplateView):

@@ -1,0 +1,11 @@
+<!-- templates/post_delete.html -->
+{% extends 'base.html' %}
+{% block title %} Sign Up {% endblock title %}
+{% block content %}
+<h1>Sign up</h1>
+<form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">sign up</button>
+    <!--input type="submit" value="Confirm" /-->
+</form>
+{% endblock content %}
